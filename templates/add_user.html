@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+<head>
+    <title>Add User</title>
+</head>
+<body>
+    <h1>Add a New User</h1>
+    <form method="post">
+        First Name: <input type="text" name="First_name"><br>
+        Last Name: <input type="text" name="Last_Name"><br>
+        Favorite Genre: <input type="text" name="genre"><br>
+        <input type="submit" value="Add User">
+    </form>
+    <a href="{{ url_for('home') }}">Back to Home</a>
+</body>
+</html>

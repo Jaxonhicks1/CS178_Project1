@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+<head>
+    <title>Update User</title>
+</head>
+<body>
+    <h1>Update a User</h1>
+    <form method="post">
+        Last Name (Current Username): <input type="text" name="Last_Name" required><br>
+        New First Name: <input type="text" name="First_name" required><br>
+        New Favorite Genre: <input type="text" name="genre" required><br>
+        <input type="submit" value="Update User">
+    </form>
+    <a href="{{ url_for('home') }}">Back to Home</a>
+</body>
+</html>

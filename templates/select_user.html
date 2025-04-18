@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+<head>
+    <title>Select a User</title>
+</head>
+<body>
+    <h1>Select a User</h1>
+    <form method="post">
+        <label for="username">Username:</label>
+        <select name="username" id="username">
+            {% for user in users %}
+                <option value="{{ user['username'] }}">{{ user['username'] }}</option>
+            {% endfor %}
+        </select><br>
+        <input type="submit" value="Select User">
+    </form>
+    <a href="{{ url_for('home') }}">Back to Home</a>
+</body>
+</html>
